@@ -6,9 +6,9 @@ import FoodCard from './FoodCard'
 function FoodList({ productList }) {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>PIZZA DI MAMA</h1>
+      <h1 className={styles.title}>e-Mama Pizza</h1>
       <p className={styles.description}>
-        Welcome to Pizza Di Mama ! <br />
+        Welcome to Mama Pizza ! <br />
         Pizzas are all homemade with joy by Mama.
       </p>
       <div className={styles.wrapper}>

@@ -18,7 +18,7 @@ function Footer() {
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.memo}>
-            PIZZA DI MAMA !
+            MAMA PIZZA !
             <br /> BEST TASTE !
             <br /> BEST QUALITY !
           </h2>
