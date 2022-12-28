@@ -1,0 +1,160 @@
+/** @format */
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+/* Orders details */
+
+.left {
+  flex: 2;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.tableRowTitle th {
+  color: var(--text-color-secondary);
+  font-weight: bold;
+}
+
+.tableData {
+  color: var(--text-color-secondary);
+}
+
+.imgContainer {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  object-fit: cover;
+}
+
+.name {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Cart resume*/
+
+.right {
+  flex: 1;
+}
+
+.cardContent b {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.paymentMethod {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  gap: 10px;
+}
+.cashMethod {
+  display: flex;
+  justify-content: center;
+}
+
+.paypalMethod {
+  margin: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* Orders details */
+
+  .tableRowTitle {
+    display: none;
+  }
+
+  .tableRowData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .imgContainer {
+    height: 35vw;
+    width: 35vw;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .extras,
+  .price,
+  .quantity {
+    font-size: 20px;
+  }
+
+  .total {
+    font-size: 24px;
+  }
+
+  .extras::before {
+    content: 'Extras:';
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  .price::before {
+    content: 'Price:';
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  .quantity::before {
+    content: 'Quantity:';
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  .total::before {
+    content: 'Total:';
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  /* Cart resume*/
+
+  .cardHeader {
+    font-size: 22px;
+  }
+
+  .cardContent {
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 10px;
+  }
+
+  .button span {
+    font-size: 22px;
+  }
+}

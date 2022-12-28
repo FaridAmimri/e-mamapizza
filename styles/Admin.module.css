@@ -1,0 +1,76 @@
+/** @format */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tableContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.addButton {
+  display: flex;
+}
+
+.logoutButton {
+  display: flex;
+}
+
+.logoutButton svg {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.item {
+  flex: 1;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: left;
+}
+
+.title {
+  text-align: center;
+}
+
+.title,
+.trTitle {
+  color: var(--text-color-secondary);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 5px;
+  height: 45px;
+  align-items: center;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .tableContainer {
+    flex-direction: column;
+  }
+  .trTitle {
+    display: none;
+  }
+  .trData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
